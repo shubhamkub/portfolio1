@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SHUBHAM</div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header>
+        <h1 id="typing"></h1>
+
+        <p>Hello and welcome! I'm shubham, a softwera engineer with a passion for web developer. 
+            This portfolio is a showcase of my journey, skills, and accomplishments in wed developer. 
+            Here, you'll find a curated collection of my work, ranging from [Type of Projects, e.g., web development,
+             graphic design, data analysis] to [Another Type of Projects, e.g.,
+             user experience design, creative writing, software engineering].</p>
+
+
+        <img class="img1" src="profile-removebg-preview.png" alt="">
+       
+        <div class="socialmedia">
+
+        <a href="https://www.instagram.com/_jai_shree_ram_____1234?igsh=MTRjbnVvcjF5Yzg3dg=="><img src="instagrame-removebg-preview.png" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=61556218912248&mibextid=ZbWKwL"><img src="facbook-removebg-preview.png" alt="" ></a>
+        <a href="https://t.me/sujoykumar24"><img src="telegram-removebg-preview.png" alt=""></a>
+        <a href="https://youtube.com/@horrorstory2008?si=sEX4WgK0qyqdbxWY"> <img src="98ae159aa1bb8b4243fbe1f9e27d1b9f-removebg-preview.png" alt=""></a>
+        <a href="https://github.com/shubhamkub"> <img src="github-removebg-preview.png" alt=""></a>
+
+        </div>  
+
+
+
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navbar');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.classList.toggle('toggle');
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var text = "WELCOME TO MY PORTFOLIO";
+  var index = 0;
+  var typingSpeed = 100;
+
+  function type() {
+    if (index < text.length) {
+      document.getElementById("typing").textContent += text.charAt(index);
+      index++;
+      setTimeout(type, typingSpeed);
+    }
+  }
+  
+  type();
+});
+
+    </script>
+</body>
+</html>
